@@ -1,29 +1,28 @@
+/*csslint empty-rules: false, ids: false, qualified-headings: false, known-properties: false, box-model: false, important: false*/
+/************************* TAG SELECTORS *************************/
 body {
-  text-align: center;
   background-color: #011F3F;
+  text-align: center;
 }
 
-#level-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+/************************ CLASS SELECTORS ************************/
+.blue {
+  background-color: blue;
+}
+
+.btn {
+  border: 10px solid black;
+  border-radius: 20%;
+  display: inline-block;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
-}
-
-.btn {
-  margin: 25px;
-  display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
-  border-radius: 20%;
 }
 
 .game-over {
@@ -31,23 +30,27 @@ body {
   opacity: 0.8;
 }
 
-.red {
-  background-color: red;
-}
-
 .green {
   background-color: green;
 }
 
-.blue {
-  background-color: blue;
+.pressed {
+  background-color: grey         !important;
+  box-shadow: 0 0 20px white     !important;
+}
+
+.red {
+  background-color: red;
 }
 
 .yellow {
   background-color: yellow;
 }
 
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+/************************* ID SELECTORS *************************/
+#level-title {
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
 }
